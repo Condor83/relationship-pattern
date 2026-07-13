@@ -1,7 +1,7 @@
 ---
 name: relationship-pattern-interview
 description: Use when a single adult wants a structured review of dating or relationship history to clarify desired partnership, map recurring patterns, test explanations, and convert insight into safer, reality-based behavior. Runs a finite one-question-at-a-time interview with chronology, evidence labels, counterexamples, checkpoints, stopping rules, and action experiments; avoids diagnosis, forced childhood causation, attachment-style identity labels, and endless excavation.
-version: 0.1.2
+version: 0.1.3
 author: Hermes Agent
 license: MIT
 metadata:
@@ -138,6 +138,43 @@ At every checkpoint, report whether the interview is producing evidence for the 
 
 The outcome changes **attention and allocation**, not standards of truth. Never selectively gather confirming examples, suppress counterevidence, force childhood causation because the participant asked “why,” or skip safety and scope rules to satisfy the requested outcome.
 
+#### Route transparency and branch contracts
+
+Adaptiveness should create useful depth without making the participant wonder where the conversation is going.
+
+After Q1 and Q2, give a brief working route in participant-facing language:
+
+> Your primary goal is [goal]. We’ll first define the relationship you want, then map the most informative relationship chapters and compare them. If an adult pattern raises a meaningful developmental question, I may propose a short adolescence or childhood branch and explain exactly what it would test. We will then challenge the strongest explanation and finish with concrete changes or experiments. I’ll show you our progress every six core questions, and you can redirect or stop at any checkpoint.
+
+Before any adaptive branch—especially adolescence, childhood, trauma, sexuality, or family-of-origin—state a **branch contract**:
+
+1. **Current hypothesis:** what adult pattern or unanswered question prompted the branch.
+2. **Why this branch may help:** what distinction the answers could clarify.
+3. **What it cannot establish:** usually causal certainty, hidden trauma, or another person's motives.
+4. **Budget:** how many adaptive questions are proposed.
+5. **Return point:** which core phase the interview will resume afterward.
+6. **Choice:** ask whether the participant wants to take the branch, defer it, or continue on the main route.
+
+Example:
+
+> A recurring pattern may involve feeling exposed when romantic interest becomes visible. A two-question adolescence branch could help us distinguish whether that response also appeared around peer evaluation before your adult relationships. It would not prove childhood causation. Afterward we would return to comparing your adult cases. Would that branch be useful, or should we stay with the adult timeline?
+
+After a branch, explicitly reconnect it:
+
+> Here is what the branch added, what remains uncertain, and whether it changes our current explanation or action plan. We are now returning to [phase].
+
+At every six-question checkpoint, show:
+
+- **Destination:** the participant's primary outcome;
+- **Current location:** phase and question count;
+- **Evidence gained:** what the answers have contributed;
+- **Active hypotheses:** with confidence and counterevidence;
+- **Why the next section matters:** the decision or distinction it should improve;
+- **Remaining route:** including any proposed optional branches;
+- **Choice:** continue, redirect, pause, or synthesize.
+
+Do not eliminate useful developmental exploration merely to stay linear. Make it visible, justified, bounded, and connected to the final outcome.
+
 ### Phase 1 — Desired life and relationship (4 questions)
 
 Start with an ordinary-day picture several years in the future, not a trait checklist.
@@ -210,7 +247,7 @@ Do not assume unavailable-partner attraction, loss of interest when chosen, fear
 
 ### Phase 4 — Developmental context, only if useful (0–3 adaptive questions)
 
-These do not count against the 24 core questions but do count against the 12-follow-up cap. Explore origins only after adult chronology and current mechanisms are visible.
+These do not count against the 24 core questions but do count against the 12-follow-up cap. Explore origins only after adult chronology and current mechanisms are visible. Use the mandatory branch contract before entering this phase, and explicitly reconnect any developmental evidence to the adult pattern and primary outcome before returning to the core route.
 
 Possible domains:
 

@@ -24,6 +24,8 @@ Immediately apply the `Outcome routing` table in `SKILL.md`: it determines adapt
 
 After the answer, collect the four 0–10 baseline ratings as a compact measurement form, not as another exploratory question: clarity, agency, distress/rumination, and confidence about next steps. Also confirm that the participant is in a reasonably safe and private place before sensitive material.
 
+After Q2 and the baseline form, present the participant-facing working route required by `Route transparency and branch contracts` in `SKILL.md`. State the primary destination, main phases, possible adaptive branches, checkpoints, and final action output before entering Phase 1.
+
 ## Phase 1 — Desired life and relationship
 
 ### Q3 — Ordinary future day
@@ -44,7 +46,7 @@ Ask permission before exploring sexual detail. Values-level answers are sufficie
 
 > What parts of your current identity or lifestyle would partnership ask you to change, and which changes would feel like a worthwhile exchange rather than unhealthy self-erasure?
 
-**Checkpoint 1:** Summarize, invite correction, state remaining budget, and offer continue/pause/synthesize.
+**Checkpoint 1:** Use the full route checkpoint: destination, current location, evidence gained, active hypotheses/unknowns, why the next section matters, remaining route or proposed branches, and the choice to continue, redirect, pause, or synthesize.
 
 ## Phase 2 — Relationship timeline and matrix
 
@@ -76,7 +78,7 @@ Use for Case 4 if significant; otherwise examine a period of singleness, burnout
 
 Use for Case 5 if significant; otherwise map the current dating context and how the participant is allocating attention, hope, and effort now.
 
-**Checkpoint 2:** Show the draft timeline, distinguish observations from interpretations, invite correction, and state remaining budget.
+**Checkpoint 2:** Show the draft timeline, distinguish observations from interpretations, and use the full route checkpoint: destination, current location, evidence gained, active hypotheses/unknowns, why cross-case comparison comes next, remaining route or proposed branches, and participant choice.
 
 ### Q13 — Transitions and cumulative learning
 
@@ -106,11 +108,11 @@ This question actively tests the common but often overclaimed “availability re
 
 > Which experiences show you relating securely or effectively, being chosen, choosing well, repairing, setting a boundary, or leaving appropriately? What do those counterexamples say about your capacities?
 
-**Checkpoint 3:** Present no more than five candidate patterns with confidence labels. Invite correction and ask whether developmental context would materially clarify any pattern.
+**Checkpoint 3:** Present no more than five candidate patterns with confidence labels, counterevidence, and unknowns. Use the full route checkpoint. If developmental context could materially distinguish an active hypothesis, propose it using a branch contract rather than entering it silently.
 
 ## Optional Phase 4 — Developmental context (0–3 adaptive questions)
 
-Only ask when relevant to a current mechanism. Choose, do not dump, from:
+Only ask when relevant to a current mechanism. Before asking, use the full branch contract: current hypothesis, why the branch may help, what it cannot prove, proposed question count, return point, and participant choice. Choose, do not dump, from:
 
 > Growing up, how did important people show love, comfort distress, handle conflict, respect agency, and repair hurt?
 
