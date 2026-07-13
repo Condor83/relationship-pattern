@@ -30,6 +30,8 @@ Deliver a concise 30-day follow-up for a participant who completed an evidence-i
 State that lack of action is useful data rather than failure. Ask the participant to paste or reference their Resume Capsule/final synthesis if they want a detailed update. Keep the message under 180 words.
 ```
 
+These seven questions cover all eight section-12 measures in `templates/final-synthesis.md` (question 3 bundles bids, ambiguity, reciprocity, and boundaries). When handing a checklist to a participant who is managing their own follow-up, use section 12's eight items verbatim instead of this question list.
+
 ## Verification
 
 After scheduling, record the reminder's identifier or delivery method in `templates/final-synthesis.md` (Follow-up commitment) and the Resume Capsule. If scheduling fails, provide the copyable calendar title and the seven questions instead of claiming success.

@@ -94,6 +94,8 @@ For Q8–Q12, use at most one adaptive follow-up per case, and only for the sing
 
 When Q12 covers current dating rather than a fifth case, treat it as a live observation field rather than a dossier: capture where attention, hope, reciprocity, and pacing are going now, then use those observations in experiments and future updates.
 
+If dating-pool-relevant context (age, orientation, geography, faith or cultural constraints) has not emerged by Q12, ask for the missing piece here as a follow-up to this question — never as an intake form. The final synthesis's external-constraints section must not be built on assumptions.
+
 **Checkpoint 2:** Show the draft timeline briefly, distinguish observation from interpretation, and give the compact checkpoint. Internally update the Resume Capsule.
 
 ### Q13 — Carry-forward effect

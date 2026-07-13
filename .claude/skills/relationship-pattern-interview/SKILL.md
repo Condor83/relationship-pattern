@@ -1,7 +1,7 @@
 ---
 name: relationship-pattern-interview
 description: Use when a single adult wants to review their dating or relationship history — asking why the same relationship patterns keep repeating, what to change about how they date, what kind of partnership they actually want, or whether a specific concern about their own romantic behavior holds up. Also use for a friend who knowingly opts into the same structured review. Not for couples mediation, diagnosing anyone, or crisis support.
-version: 0.3.1
+version: 0.3.2
 license: MIT
 ---
 
@@ -424,7 +424,7 @@ For personal health or crisis content beyond relationship scope, follow the esca
 
 ## Outcome Evaluation and Follow-up
 
-Same-session ratings are optional **usability signals**, not proof of effectiveness. In explicit pilot/research mode, ratings may cover clarity, agency, confidence in next action, and distress/rumination before and after. Interpret improvement cautiously because demand effects and conversational reassurance can inflate it.
+Same-session ratings are optional **usability signals**, not proof of effectiveness. In explicit pilot/research mode, use the five measures in `templates/final-synthesis.md` section 13 — clarity about the desired relationship, clarity about recurring patterns, confidence in next action, sense of agency, and distress/rumination — before and after. Interpret improvement cautiously because demand effects and conversational reassurance can inflate it.
 
 The primary outcome measure is behavior and hypothesis updating after real-world time has passed. At 30 days, review the behavioral measures in `templates/final-synthesis.md` section 12 — bids, clarified or released ambiguity, reciprocity-based decisions, boundaries, completed experiments, rumination direction, hypothesis updates, and unintended harms.
 
