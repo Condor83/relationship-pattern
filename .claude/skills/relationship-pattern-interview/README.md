@@ -4,6 +4,16 @@ A structured, finite interview that a general-purpose AI assistant (Claude, Chat
 
 It is evidence-informed self-reflection and decision support — not therapy, diagnosis, crisis care, or a validated assessment.
 
+## One-command start (Claude Code)
+
+If you have [Claude Code](https://claude.com/claude-code) and git installed, paste this into a terminal:
+
+```bash
+git clone https://github.com/Condor83/relationship-pattern.git && cd relationship-pattern && claude "Read .claude/skills/relationship-pattern-interview/SKILL.md and .claude/skills/relationship-pattern-interview/templates/core-question-bank.md, then run the relationship pattern interview with me."
+```
+
+The interview takes 30–60 minutes of honest answers, and you can pause anytime — it will give you a resume summary to pick up later.
+
 ## Quick start
 
 **Claude (claude.ai):** Create a Project and upload this folder's files, or paste `SKILL.md` and `templates/core-question-bank.md` into a chat. Then say something like "Run the relationship pattern interview with me."
