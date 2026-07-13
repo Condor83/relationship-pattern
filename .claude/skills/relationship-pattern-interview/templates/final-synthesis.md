@@ -2,7 +2,9 @@
 
 ## Scope and confidence
 
-- Purpose of the interview:
+- Protocol version:
+- Primary outcome:
+- Sessions / core questions / adaptive follow-ups:
 - Evidence reviewed:
 - Important limits:
 - What this synthesis cannot establish:
@@ -29,7 +31,7 @@ State one concise formulation. Mark it **supported**, **plausible**, or **specul
 
 ## 4. Pattern cards
 
-Maximum five.
+Default one to three; maximum five only when each changes a decision or experiment.
 
 ### Pattern 1 — [plain-language name]
 
@@ -56,15 +58,31 @@ Preserve what is adaptive, healthy, and worth carrying forward.
 
 Include dating pool, faith/culture, timing, geography, health, workload, life stage, and other people's choices.
 
-## 7. What we should not conclude
+## 7. Signal-weighting profile
+
+State these as hypotheses, not verdicts.
+
+- Signals historically overweighted:
+- Signals historically underweighted:
+- Evidence and counterexamples:
+
+## 8. Continuation gates
+
+Use observable questions rather than rigid deadlines.
+
+- Early dating:
+- Around 30 days:
+- Around 60–90 days:
+
+## 9. What we should not conclude
 
 List overclaims the evidence does not support.
 
-## 8. Unresolved questions
+## 10. Unresolved questions
 
 Maximum five. Prefer questions answerable through future observation.
 
-## 9. 30–90 day operating plan
+## 11. 30–90 day operating plan
 
 ### Experiment 1
 
@@ -84,9 +102,26 @@ Maximum three experiments.
 
 ### Professional support, if appropriate
 
-## 10. Outcome measures
+### Follow-up commitment
 
-Rate 0–10 before / after:
+- **Review date:**
+- **Reminder:** scheduled | declined | participant-managed
+- **Reminder handle or calendar title:**
+
+## 12. 30-day behavioral review
+
+- Clear bids made:
+- Ambiguities clarified or released:
+- Reciprocity-based decisions:
+- Boundaries communicated:
+- Experiments completed:
+- Rumination reduced or increased:
+- Hypotheses strengthened, weakened, or discarded:
+- Advice that felt imposed or caused unintended harm:
+
+## 13. Optional pilot usability measures
+
+Use only in explicit pilot/research mode. These same-session ratings are usability signals, not proof of effectiveness.
 
 | Measure | Before | After |
 |---|---:|---:|
@@ -95,12 +130,3 @@ Rate 0–10 before / after:
 | Confidence in next action | | |
 | Sense of agency | | |
 | Distress / rumination | | |
-
-### 30-day behavioral review
-
-- Clear bids made:
-- Ambiguities clarified or released:
-- Reciprocity-based decisions:
-- Boundaries communicated:
-- Experiments completed:
-- Hypotheses strengthened, weakened, or discarded:

@@ -1,7 +1,7 @@
 ---
 name: relationship-pattern-interview
 description: Use when a single adult wants a structured review of dating or relationship history to clarify desired partnership, map recurring patterns, test explanations, and convert insight into safer, reality-based behavior. Runs a finite one-question-at-a-time interview with chronology, evidence labels, counterexamples, checkpoints, stopping rules, and action experiments; avoids diagnosis, forced childhood causation, attachment-style identity labels, and endless excavation.
-version: 0.1.3
+version: 0.2.1
 author: Hermes Agent
 license: MIT
 metadata:
@@ -49,27 +49,29 @@ Do not use for:
 
 ## Core Contract
 
-### Mandatory participant-facing opening
+### Default participant-facing opening
 
-Before asking any interview question, say in plain language:
+Keep the discipline mostly invisible. Before Q1, give this concise orientation or a natural equivalent—do not recite the rest of the internal protocol:
 
-> This interview is designed to help you understand recurring relationship patterns and make better future relationship choices. We will clarify the relationship you want, map a small number of significant dating or relationship chapters, compare what happened across them, test possible explanations against counterexamples, and turn the strongest insights into practical changes for the next 30–90 days.
->
-> Your answers are the evidence the interview uses. Describing concrete events—what drew you in, what each person actually did, what you expected, how you responded to uncertainty or closeness, and what happened next—helps reveal repeatable sequences. Comparing several experiences helps distinguish a real pattern from one painful exception. Naming counterexamples, uncertainty, outside constraints, and times you handled things well keeps the interview from forcing a neat but inaccurate story.
->
-> You do not need polished explanations or perfect memory. “I don’t know,” approximate timelines, corrections, and skipped questions are useful. This is not a test, diagnosis, or search for something wrong with you. The result will be a provisional relationship map, not a verdict: what seems supported, what remains uncertain, what strengths you should preserve, and what you can test differently in real life.
+> This is a structured review of what you want, several important dating or relationship chapters, and what repeatedly happens under attraction, closeness, or uncertainty. Concrete examples help us compare cases; “I don’t know,” corrections, and counterexamples are equally useful. We’ll treat explanations as hypotheses, not diagnoses, and finish with a practical relationship map and 1–3 changes to test. There are up to 24 core prompts with a short progress check every six, and we can stop earlier when we have enough. You may skip, pause, or redirect anything. Sensitive topics require your permission, and nothing new is saved outside this conversation unless you explicitly choose that.
 
-Then explain the finite format, checkpoints, participant controls, privacy choices, and expected final artifacts below.
+Progressively disclose details only when they become relevant. Do not front-load the participant with the full artifact list, evidence rubric, safety policy, routing table, or branch procedure.
 
-At the beginning, tell the participant:
+### Internal contract
 
-- the purpose and expected outputs;
-- the maximum question budget and checkpoint schedule;
-- they may skip, pause, correct, or delete any answer;
-- sexual, traumatic, and abuse-related topics require permission before detail;
-- interpretations are revisable hypotheses, not diagnoses;
-- the interview ends in an action plan, not indefinite analysis;
-- durable storage is opt-in: do not save sensitive relationship material to memory, a wiki, or another knowledge base unless the participant explicitly wants continuity and understands where it will be stored.
+The agent—not the participant—must track:
+
+- purpose and primary outcome;
+- 24-core-question maximum and 12-adaptive-follow-up maximum;
+- checkpoint every 6 core questions;
+- one to three sessions, ideally 30–60 minutes each;
+- participant control to skip, pause, correct, redirect, or stop;
+- permission before sexual, traumatic, abuse-related, or developmental detail;
+- interpretations as revisable hypotheses rather than diagnoses;
+- action-oriented endpoint rather than indefinite analysis;
+- durable storage as opt-in only, with exact content and location disclosed before saving.
+
+Do not turn this internal checklist into intake paperwork. Participant-facing language should be warm, brief, and proportionate.
 
 Default budget:
 
@@ -77,9 +79,9 @@ Default budget:
 - **up to 12 adaptive follow-ups** only when an answer materially changes the formulation; Phase 4 developmental questions are adaptive, not core;
 - **checkpoint every 6 core questions**;
 - **three sessions maximum**, ideally 30–60 minutes each;
-- one question at a time.
+- one atomic question at a time.
 
-Show progress at checkpoints: `Question 6 of up to 24 core questions; 0 adaptive follow-ups used.`
+Show only compact progress at checkpoints: `6/24 core · 0/12 adaptive`.
 
 ## Epistemic Discipline
 
@@ -109,6 +111,41 @@ Never promote a hypothesis because it feels emotionally resonant. A coherent nar
 
 Use `templates/core-question-bank.md` for the exact 24-question backbone. Adapt wording to the participant's own language, but preserve each question's function and the 6-question checkpoints.
 
+### Execution state and drift control
+
+The protocol's value depends on adherence across a long emotional conversation. Before **every** response, silently update this compact state:
+
+```text
+version | primary outcome | core Q number | adaptive count | phase
+active case/branch | concrete facts gained | hypotheses/confidence
+counterevidence/unknowns | safety status | next atomic question and why
+```
+
+Then run this six-item preflight:
+
+1. **Atomicity:** Am I asking one answerable question, not a list disguised as one?
+2. **Phase discipline:** Am I doing the work of the current phase rather than interpreting ahead of the evidence?
+3. **Evidence:** Did I separate reported events, feelings, meanings, inferred motives, and my hypothesis?
+4. **Anti-sycophancy:** Have I preserved counterexamples and plausible ordinary alternatives?
+5. **Scope/safety:** Do I need the safety override or participant permission before proceeding?
+6. **Momentum:** Will this question change the formulation, case comparison, or action plan?
+
+If any answer fails, rewrite the response before sending it. Keep the ledger internal except at checkpoints or handoffs.
+
+`references/safety-guardrails.md` is a conditional safety override only. It does not replace this protocol, question budget, phases, or final synthesis. If safety requires a pause, record the paused question and resume there only when appropriate.
+
+### Multi-session continuity
+
+At every checkpoint, generate or update a **Resume Capsule** using `templates/session-resume.md`. Also update it whenever the participant pauses. Keep it concise enough to paste into a new conversation.
+
+- During continuous same-session interviewing, keep the capsule internal and show only the compact checkpoint.
+- Show the capsule inline when the participant pauses, changes sessions, asks for a handoff summary, or continuity is at risk.
+- Do not store it elsewhere unless the participant explicitly opts into durable storage and approves the exact content and path.
+- On a later session, reload this skill and the capsule before asking another question.
+- Resume by stating, in no more than three sentences: the participant's destination, current location, and why the next question matters.
+- Never reconstruct missing state from confident guesses. If the capsule and transcript disagree, ask one clarification.
+- The capsule is the authoritative handoff; the full transcript remains supporting evidence.
+
 ### Phase 0 — Contract and baseline (2 questions)
 
 **Goal:** Define what decision or behavior this interview should improve.
@@ -116,11 +153,23 @@ Use `templates/core-question-bank.md` for the exact 24-question backbone. Adapt 
 Capture:
 
 - desired outcome from the process;
-- current dating/relationship context;
+- current dating/relationship context as it emerges;
 - topics to avoid or approach carefully;
-- baseline 0–10 ratings: clarity, agency, distress/rumination, confidence in next steps.
+- optional baseline ratings only in explicit pilot/research mode.
 
 If the participant asks for diagnosis, certainty about another person's motives, or crisis help, reset scope before continuing.
+
+When an absent-person label such as “avoidant,” “narcissistic,” or “toxic” appears, translate it before proceeding:
+
+> I can’t diagnose them or know their hidden motives. What repeated behavior makes that label feel relevant to you?
+
+Then examine repetition, repair, impact on safety/agency, and ordinary alternatives. Do not casually echo the label as an adjective.
+
+If the participant asks whether behavior was “abusive” without having described a safety-gate behavior, do not validate or reject the label globally. Ask one concise screen:
+
+> When you say abusive, are you referring to threats, intimidation, stalking, unwanted sexual contact, coercive control, or fear for your safety?
+
+If yes or unclear, pause and load `references/safety-guardrails.md`. If no, continue with behavior-and-impact language while leaving the global label unresolved.
 
 #### Outcome routing
 
@@ -146,7 +195,7 @@ After Q1 and Q2, give a brief working route in participant-facing language:
 
 > Your primary goal is [goal]. We’ll first define the relationship you want, then map the most informative relationship chapters and compare them. If an adult pattern raises a meaningful developmental question, I may propose a short adolescence or childhood branch and explain exactly what it would test. We will then challenge the strongest explanation and finish with concrete changes or experiments. I’ll show you our progress every six core questions, and you can redirect or stop at any checkpoint.
 
-Before any adaptive branch—especially adolescence, childhood, trauma, sexuality, or family-of-origin—state a **branch contract**:
+Before any adaptive branch—especially adolescence, childhood, trauma, sexuality, or family-of-origin—cover this **branch contract internally**, then present it naturally in two or three sentences rather than as a six-item form:
 
 1. **Current hypothesis:** what adult pattern or unanswered question prompted the branch.
 2. **Why this branch may help:** what distinction the answers could clarify.
@@ -163,15 +212,14 @@ After a branch, explicitly reconnect it:
 
 > Here is what the branch added, what remains uncertain, and whether it changes our current explanation or action plan. We are now returning to [phase].
 
-At every six-question checkpoint, show:
+At each six-question checkpoint, evaluate the full route internally but show the participant a compact checkpoint—normally four bullets and no more than about 120 words:
 
-- **Destination:** the participant's primary outcome;
-- **Current location:** phase and question count;
-- **Evidence gained:** what the answers have contributed;
-- **Active hypotheses:** with confidence and counterevidence;
-- **Why the next section matters:** the decision or distinction it should improve;
-- **Remaining route:** including any proposed optional branches;
+- **Progress:** phase and compact count;
+- **What the evidence currently suggests:** one or two calibrated statements plus the most important unknown, counterexample, or risk if the leading explanation is wrong;
+- **Why the next section matters:** one sentence tied to the primary outcome;
 - **Choice:** continue, redirect, pause, or synthesize.
+
+Put detailed state in the Resume Capsule, not in participant-facing ceremony. Mention an optional branch only when it is actually being proposed. Do not recite every artifact, rubric label, or remaining phase at every checkpoint.
 
 Do not eliminate useful developmental exploration merely to stay linear. Make it visible, justified, bounded, and connected to the final outcome.
 
@@ -307,13 +355,13 @@ Review date:
 
 After every six core questions:
 
-1. Summarize the strongest facts and tentative hypotheses.
-2. Name what remains unknown.
-3. Invite correction: “What did I misunderstand or overstate?”
-4. State the remaining question budget and phases.
-5. Ask whether to continue, pause, or synthesize now.
+1. If the skill loader is available, reload this `relationship-pattern-interview` skill and `templates/core-question-bank.md` before continuing. Load `references/safety-guardrails.md` only when its trigger conditions apply.
+2. Reconcile the internal ledger: strongest facts, hypotheses, counterevidence, unknowns, safety, and primary-outcome fit.
+3. Show the compact four-part checkpoint defined above, normally under 120 words.
+4. Invite correction and the choice to continue, redirect, pause, or synthesize.
+5. Generate or update the Resume Capsule internally; show it inline only when pausing, changing sessions, or the participant asks.
 
-If the participant pauses, produce a synthesis from current evidence. Do not pressure them to complete the protocol.
+If the participant pauses, produce a proportionate synthesis and Resume Capsule from current evidence. Do not pressure completion.
 
 ## Stopping Rules
 
@@ -335,7 +383,7 @@ Never keep asking questions merely because the interview has a numbered sequence
 
 ## Required Final Artifacts
 
-Use `templates/final-synthesis.md`.
+Use `templates/final-synthesis.md` as a coverage guide, not a demand for padded prose. Default to a concise synthesis roughly equivalent to 1–3 pages. Collapse low-evidence or inapplicable sections into one line, link the matrix rather than reproducing it when possible, and include **1–3 pattern cards by default**; use up to five only when each changes a decision or experiment.
 
 The final output contains:
 
@@ -361,6 +409,8 @@ Pause the normal interview if the participant reports:
 
 Respond with support, immediate safety orientation, and appropriate local or professional resources. Do not continue as though the primary issue were attachment or communication. For disclosed partner or sexual violence, use the WHO **LIVES** first-line sequence at a high level: Listen without judgment; Inquire about needs and concerns; Validate; Enhance safety; Support connection to chosen resources. Do not pressure for detail, tell the participant to confront or leave, or override their autonomy.
 
+Safety-orientation questions during a safety pause do not count as adaptive relationship follow-ups. Preserve the paused core question and counts unchanged if the interview later resumes.
+
 General safeguards:
 
 - no participant or partner diagnoses;
@@ -376,23 +426,11 @@ General safeguards:
 
 For personal health or crisis content, load `health-and-wellbeing-support` and follow its escalation rules.
 
-## Outcome Evaluation
+## Outcome Evaluation and Follow-up
 
-Before and immediately after the interview, rate 0–10:
+Same-session ratings are optional **usability signals**, not proof of effectiveness. In explicit pilot/research mode, ratings may cover clarity, agency, confidence in next action, and distress/rumination before and after. Interpret improvement cautiously because demand effects and conversational reassurance can inflate it.
 
-- clarity about desired relationship;
-- clarity about recurring patterns;
-- confidence in next action;
-- sense of agency;
-- distress or rumination.
-
-Ask:
-
-- Which conclusion feels useful but uncertain?
-- Which conclusion felt imposed or inaccurate?
-- What action will occur because of this interview?
-
-At 30 days, measure behavior rather than insight alone:
+The primary outcome measure is behavior and hypothesis updating after real-world time has passed. At 30 days, review:
 
 - dates initiated or accepted;
 - clear bids made;
@@ -400,8 +438,21 @@ At 30 days, measure behavior rather than insight alone:
 - reciprocity-based investment decisions;
 - boundaries communicated;
 - small vulnerability/response experiments completed;
-- rumination reduced;
-- hypotheses strengthened, weakened, or discarded by new evidence.
+- rumination reduced or increased;
+- hypotheses strengthened, weakened, or discarded by new evidence;
+- unintended harms or advice that felt imposed.
+
+### Required follow-up mechanism
+
+At final synthesis:
+
+1. Set a specific review date in the operating plan.
+2. Offer—not assume—a 30-day reminder.
+3. If a scheduler such as Hermes `cronjob` is available and the participant agrees, create a one-shot job for 30 days with `attach_to_session=true`, using `templates/30-day-follow-up.md`. The prompt must be self-contained, contain the behavioral review questions, avoid unnecessary sensitive history, and invite the participant to update the provisional hypotheses.
+4. If no scheduler is available or the participant declines, provide a copyable calendar-reminder title and the behavioral review checklist.
+5. Record whether follow-up was scheduled, declined, or delegated to the participant in the final synthesis and Resume Capsule.
+
+A final output without a review date is incomplete.
 
 ## Common Pitfalls
 
@@ -410,6 +461,7 @@ At 30 days, measure behavior rather than insight alone:
 3. **Childhood monocausality.** Map adult behavior first and treat developmental explanations as optional contributors.
 4. **Narrative fallacy.** Require counterevidence, alternatives, and confidence labels.
 5. **Partner prosecution.** Describe observed behavior and compatibility; do not diagnose motives or disorders.
+   - Even casual adjectives such as “textbook avoidant” or “that sounds narcissistic” can become verdicts. Prefer behavior-specific language, then state alternatives and limits.
 6. **Deficit-only analysis.** Preserve strengths, positive experiences, and adaptive functions of protective behavior.
 7. **Insight without action.** No final synthesis is complete without a reversible experiment or decision rule.
 8. **Generic questions.** Use the participant's own language and ask about concrete episodes.
@@ -417,6 +469,14 @@ At 30 days, measure behavior rather than insight alone:
 10. **Treating an individual narrative as dyadic truth.** State the limits of one-person retrospective evidence.
 
 ## Verification Checklist
+
+After editing the skill, run:
+
+```bash
+python3 scripts/validate_skill.py
+```
+
+Use `references/adherence-test-rubric.md` for synthetic and real transcript review. Static validation is necessary but cannot establish real conversational adherence or user value.
 
 Before completing an interview, verify:
 
@@ -438,4 +498,4 @@ See `references/research-foundation.md` for the relationship-science constructs,
 
 ## Safety Reference
 
-See `references/safety-guardrails.md` for opening language, trauma/distress handling, abuse/coercion/stalking behaviors, suicidality routing, privacy and digital-safety rules, false-memory safeguards, cultural/faith considerations, referral language, and authoritative sources. Load it whenever sensitive or high-risk content appears.
+See `references/safety-guardrails.md` for trauma/distress handling, abuse/coercion/stalking behaviors, suicidality routing, privacy and digital-safety rules, false-memory safeguards, cultural/faith considerations, referral language, and authoritative sources. Load it only when sensitive or high-risk content triggers the conditional safety override.

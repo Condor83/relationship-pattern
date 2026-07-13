@@ -1,6 +1,6 @@
 # Core Question Bank
 
-Before Q1, read or naturally adapt the **Mandatory participant-facing opening** in `SKILL.md`. Do not ask the participant to infer what a “relationship-pattern interview” means from the first question.
+Before Q1, read or naturally adapt the **Default participant-facing opening** in `SKILL.md`. Do not ask the participant to infer what a “relationship-pattern interview” means from the first question.
 
 Ask one question at a time. Adapt wording to the participant's language without changing the function of the question. Use adaptive follow-ups only when needed for accuracy.
 
@@ -22,9 +22,9 @@ Immediately apply the `Outcome routing` table in `SKILL.md`: it determines adapt
 
 > What, if anything, should we avoid or handle especially carefully?
 
-After the answer, collect the four 0–10 baseline ratings as a compact measurement form, not as another exploratory question: clarity, agency, distress/rumination, and confidence about next steps. Also confirm that the participant is in a reasonably safe and private place before sensitive material.
+After the answer, collect baseline ratings only in explicit pilot/research mode. Treat same-session before/after ratings as usability signals, not evidence that the interview works. Do not add an intake form to the default conversational mode. Confirm privacy or immediate safety only when the context or a proposed sensitive branch makes it relevant.
 
-After Q2 and the baseline form, present the participant-facing working route required by `Route transparency and branch contracts` in `SKILL.md`. State the primary destination, main phases, possible adaptive branches, checkpoints, and final action output before entering Phase 1.
+After Q2, present the working route in no more than three sentences: primary destination, next major phase, possible justified branch, and action endpoint. Save procedural detail for checkpoints or when it becomes relevant.
 
 ## Phase 1 — Desired life and relationship
 
@@ -32,129 +32,161 @@ After Q2 and the baseline form, present the participant-facing working route req
 
 > Imagine an ordinary weekday several years into an excellent relationship—not a vacation or highlight. What does that day look and feel like from morning through bedtime?
 
-### Q4 — Standards
+### Q4 — Non-negotiables
 
-> From that picture, what is genuinely non-negotiable, what is a strong preference, what is flexible, and what are you still unsure about?
+> Which qualities or conditions are genuinely non-negotiable for the relationship you want?
 
-### Q5 — Relationship processes
+### Q5 — Closeness
 
-> In the relationship you want, what should affection, sex or physical intimacy, emotional support, independence, disagreement, and repair look like in practice?
+> What kind of closeness would make you feel most loved and desired in that relationship?
 
-Ask permission before exploring sexual detail. Values-level answers are sufficient unless detail changes the formulation.
+Ask permission before any sexual detail. A values-level answer is sufficient unless detail would change the formulation.
 
-### Q6 — Tradeoffs
+### Q6 — Willing tradeoffs
 
-> What parts of your current identity or lifestyle would partnership ask you to change, and which changes would feel like a worthwhile exchange rather than unhealthy self-erasure?
+> What parts of your current life are you genuinely willing to change to build that relationship?
 
-**Checkpoint 1:** Use the full route checkpoint: destination, current location, evidence gained, active hypotheses/unknowns, why the next section matters, remaining route or proposed branches, and the choice to continue, redirect, pause, or synthesize.
+**Checkpoint 1:** Show the compact checkpoint defined in `SKILL.md`. Internally create/update the Resume Capsule.
 
 ## Phase 2 — Relationship timeline and matrix
 
 ### Q7 — Chapter map
 
-> What are the significant romantic chapters we should map—relationships, situationships, major one-sided attachments, or periods of singleness that shaped you? Give each a neutral label and approximate life stage.
+> Which up to five romantic or single-life chapters matter most for understanding your pattern?
 
-Choose up to five cases with the participant. When available, include the most formative, the most recent, the healthiest or best counterexample, the most confusing/painful recurring arc, and one meaningful period of singleness. Do not automatically treat every crush or short date as significant.
+Assign neutral labels and approximate life stages from the answer. When available, include the most formative, the most recent, the healthiest counterexample, the most confusing recurring arc, and one meaningful period of singleness. Do not automatically treat every crush or short date as significant.
 
 ### Q8 — Case 1
 
-> Tell me the story of [Case 1] from beginning to end: what drew you in, how reciprocity and safety developed, what you did when things became uncertain or difficult, and what changed or ended it.
+> Tell me the story of [Case 1] from beginning to end, focusing on the moments when its direction changed.
 
-Use adaptive prompts for missing high-value domains; do not interrogate every matrix cell.
+After the narrative, use at most one adaptive follow-up for the single missing domain most likely to change the formulation. Record other gaps as unknowns rather than spending follow-ups mechanically.
 
 ### Q9 — Case 2
 
-Use the same narrative function for Case 2, with wording adapted to contrasts emerging from Case 1.
+> Tell me the story of [Case 2] from beginning to end, focusing on the moments when its direction changed.
 
 ### Q10 — Case 3
 
-Use the same narrative function for Case 3.
+> Tell me the story of [Case 3] from beginning to end, focusing on the moments when its direction changed.
 
 ### Q11 — Case 4 or meaningful non-relationship period
 
-Use for Case 4 if significant; otherwise examine a period of singleness, burnout, caregiving, faith transition, health strain, or other context that affected relational capacity.
+If Case 4 is significant, ask:
+
+> Tell me the story of [Case 4] from beginning to end, focusing on the moments when its direction changed.
+
+Otherwise ask:
+
+> Which period of singleness or major life strain most affected your capacity or approach to relationships?
 
 ### Q12 — Case 5 or current dating context
 
-Use for Case 5 if significant; otherwise map the current dating context and how the participant is allocating attention, hope, and effort now.
+If Case 5 is significant, ask:
 
-**Checkpoint 2:** Show the draft timeline, distinguish observations from interpretations, and use the full route checkpoint: destination, current location, evidence gained, active hypotheses/unknowns, why cross-case comparison comes next, remaining route or proposed branches, and participant choice.
+> Tell me the story of [Case 5] from beginning to end, focusing on the moments when its direction changed.
 
-### Q13 — Transitions and cumulative learning
+Otherwise ask:
 
-> Looking across these chapters, what did you carry from one into the next—something you sought again, avoided, feared, expected, or learned to do differently?
+> How are you currently allocating attention, hope, and effort in dating?
 
-### Q14 — Attraction and selection over time
+For Q8–Q12, use at most one adaptive follow-up per case, and only for the single missing domain most likely to change the formulation. Record other gaps as unknowns.
 
-> Across the timeline, what repeatedly generated attraction, what sustained or reduced it, and how often did attraction coincide with compatibility, availability, and reciprocal choice?
+When Q12 covers current dating rather than a fifth case, treat it as a live observation field rather than a dossier: capture where attention, hope, reciprocity, and pacing are going now, then use those observations in experiments and future updates.
+
+**Checkpoint 2:** Show the draft timeline briefly, distinguish observation from interpretation, and give the compact checkpoint. Internally update the Resume Capsule.
+
+### Q13 — Carry-forward effect
+
+> What did you carry from one relationship chapter into the next?
+
+### Q14 — Attraction pattern
+
+> Across these cases, what most reliably created attraction for you?
 
 ## Phase 3 — Cross-case pattern detection
 
-### Q15 — Behavior under uncertainty
+### Q15 — Prediction under uncertainty
 
-> When you really want someone but do not know whether they will choose you, what do you tend to notice, predict, feel, and do—and what does that response protect you from in the short term?
+> When someone you want becomes uncertain or less available, what do you usually predict will happen?
 
-### Q16 — Behavior when clearly chosen
+### Q16 — Response when clearly chosen
 
-> When someone clearly and consistently shows interest, what happens to your attraction, trust, openness, and behavior? Which actual examples support your answer?
+> When someone clearly and consistently chooses you, what usually happens to your attraction?
 
-This question actively tests the common but often overclaimed “availability reduces attraction” hypothesis.
+Use examples already mapped before spending an adaptive follow-up. This tests—but does not presume—the claim that availability reduces attraction.
 
-### Q17 — Relationship process pattern
+### Q17 — Stress behavior
 
-> Across your important experiences, what repeats around support, vulnerability, boundaries, power, conflict, and repair—and where do the cases differ?
+> During relationship conflict or uncertainty, which behavior do you repeat most often?
 
-### Q18 — Strengths and counterexamples
+### Q18 — Strongest counterexample
 
-> Which experiences show you relating securely or effectively, being chosen, choosing well, repairing, setting a boundary, or leaving appropriately? What do those counterexamples say about your capacities?
+> Which relationship experience is the strongest counterexample to an unhelpful pattern we might otherwise infer?
 
-**Checkpoint 3:** Present no more than five candidate patterns with confidence labels, counterevidence, and unknowns. Use the full route checkpoint. If developmental context could materially distinguish an active hypothesis, propose it using a branch contract rather than entering it silently.
+**Checkpoint 3:** Present no more than five candidate patterns with confidence, counterevidence, and unknowns, then give the compact checkpoint. If developmental context could distinguish an active hypothesis, propose it naturally using the branch contract. Internally update the Resume Capsule.
+
+If the participant is repeatedly seeking certainty about an absent person's motives or diagnosis, do not propose a developmental branch by default. Offer partial synthesis or move directly toward falsification/action:
+
+> We have enough to describe the observed pattern and what remains unknown. More detail about this person may increase rumination without improving your decision. I recommend that we either pause with a partial synthesis or move to disconfirming evidence and action. Which would be more useful?
 
 ## Optional Phase 4 — Developmental context (0–3 adaptive questions)
 
-Only ask when relevant to a current mechanism. Before asking, use the full branch contract: current hypothesis, why the branch may help, what it cannot prove, proposed question count, return point, and participant choice. Choose, do not dump, from:
+Only ask when relevant to a current mechanism. Before asking, cover the branch contract internally and present it naturally in two or three sentences: what it tests, what it cannot prove, question budget/return point, and participant choice. Choose no more than three atomic prompts relevant to the active hypothesis:
 
-> Growing up, how did important people show love, comfort distress, handle conflict, respect agency, and repair hurt?
+> When you were upset growing up, how did important people usually respond?
 
-> During adolescence, what did peers, family, faith, culture, appearance, or early romantic experiences teach you about being wanted and making desire visible?
+> Growing up, what usually happened after conflict in your family?
 
-> Where else did this same response to visibility, evaluation, closeness, or uncertainty appear—and what evidence suggests the connection is real rather than merely a good story?
+> Growing up, how safe did it feel to say no or want something different?
+
+> During adolescence, what did making romantic interest visible seem to risk?
+
+> What message did your faith, culture, or family give you about being wanted or choosing a partner?
+
+> Where else did a similar response to visibility, evaluation, closeness, or uncertainty appear?
+
+Do not combine these into one multi-domain question.
+
+After the branch, reconnect before resuming:
+
+> Here is what the branch added: [one evidence statement]. What remains uncertain is [one limit]. This changes/does not change the current hypothesis or action by [brief effect]. We are returning to [next core phase/question].
 
 Then return to the core sequence. These count toward the 12 adaptive follow-ups.
 
 ## Phase 5 — Falsification and alternatives
 
-### Q19 — Best current hypothesis
+### Q19 — Best-supported hypothesis
 
-> Of the candidate patterns, which one best explains a meaningful part of your experience, and what concrete evidence supports it?
+> Which candidate pattern currently has the strongest evidence?
 
 ### Q20 — Disconfirming evidence
 
-> What evidence does not fit that explanation, and what would we be ignoring if we accepted it too quickly?
+> What evidence most strongly contradicts that pattern?
 
-### Q21 — Alternatives and update test
+### Q21 — Best alternative
 
-> What ordinary alternatives—mismatch, partner behavior, timing, dating-pool limits, culture, geography, burnout, or chance—could produce the same history, and what future observation would raise or lower confidence in our hypothesis?
+> What ordinary alternative best explains the same evidence?
 
 ## Phase 6 — Translation into action
 
 ### Q22 — Highest-leverage change
 
-> If you changed one selection rule, pacing habit, communication behavior, boundary, or response to uncertainty, which change would most improve your chance of building the relationship you described?
+> Which one behavior under your control would most improve your chance of building the relationship you described?
 
-### Q23 — Experiments
+### Q23 — Real-world test
 
-> What one to three small, safe experiments can test the hypothesis over the next 30–90 days, and what observable result would count as useful evidence?
+> What small, safe action could test the leading hypothesis within the next 30 days?
 
-Complete the experiment template for each.
+Complete the experiment template from the answer and existing evidence. Use one adaptive follow-up only if the observable result or safety boundary cannot be specified responsibly. Include the main overcorrection risk if the new rule is applied too rigidly; protect both self-respect and fair observation.
 
 ### Q24 — Final correction
 
 > Before I synthesize, what have I misunderstood or overstated?
 
-Then use the final measurement form to ask which conclusion still feels uncertain, record the participant's chosen action, and re-rate the four baseline measures. These are output checks, not additional exploratory interview questions.
+Then record which conclusion remains uncertain and the participant's chosen action. In explicit pilot/research mode, collect the brief before/after usability ratings immediately before or after synthesis, label them as usability signals only, and place them in section 13 of the final synthesis.
 
-**Final checkpoint:** Re-rate baseline measures, produce the final synthesis, state limits, and set a review date.
+**Final checkpoint:** Produce the final synthesis, set a specific review date, update the Resume Capsule, and offer the follow-up mechanism in `SKILL.md`.
 
 ## Adaptive follow-up tests
 

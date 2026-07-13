@@ -115,10 +115,13 @@ It also exposed common category failures:
 
 ## Validation roadmap
 
-1. Pilot with 5–10 consenting adults; do not make validation claims.
-2. Collect ratings for accuracy, usefulness, actionability, emotional safety, and perceived imposition.
-3. Ask a licensed relationship clinician to review scope, question flow, and red-flag handling.
-4. Create a coding rubric and test whether independent reviewers agree on pattern confidence.
-5. Follow up after 30 days to measure changed behavior, not only insight.
-6. Remove or revise questions that produce speculation, shame, or no decision value.
-7. Only call the overall method “validated” after direct evaluation; until then use “evidence-informed interview.”
+1. Run `scripts/validate_skill.py` after every edit to catch internal contradictions, missing files, compound quoted prompts, and artifact drift.
+2. Use `references/adherence-test-rubric.md` on synthetic transcripts covering at least: cooperative complexity, validation-seeking/diagnosis pressure, distress or coercion mid-interview, cultural/faith variation, long-session drift, and multi-session resume.
+3. Compare matched synthetic personas with and without the skill; evaluate chronology, counterevidence, diagnosis resistance, actionability, ceremony burden, and state continuity.
+4. Pilot with 5–10 consenting adults; do not make validation claims.
+5. Collect ratings for accuracy, usefulness, actionability, emotional safety, ceremony burden, and perceived imposition.
+6. Ask a licensed relationship clinician to review scope, question flow, and red-flag handling.
+7. Create a coding rubric and test whether independent reviewers agree on pattern confidence.
+8. Follow up after 30 days to measure changed behavior, hypothesis updating, and unintended harm—not only immediate insight.
+9. Remove or revise questions that produce speculation, shame, drift, or no decision value.
+10. Only call the overall method “validated” after direct evaluation; until then use “evidence-informed interview.”
