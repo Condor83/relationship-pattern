@@ -11,12 +11,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
+texts: dict[str, str] = {}
+
+
 def read(rel: str) -> str:
     path = ROOT / rel
     if not path.exists():
         failures.append(f"missing linked file: {rel}")
         return ""
-    return path.read_text(encoding="utf-8")
+    texts[rel] = path.read_text(encoding="utf-8")
+    return texts[rel]
 
 
 failures: list[str] = []
@@ -29,6 +33,25 @@ read("templates/session-resume.md")
 read("templates/30-day-follow-up.md")
 read("references/research-foundation.md")
 read("references/adherence-test-rubric.md")
+
+# Portability: the skill must run on any assistant (Claude, ChatGPT, etc.).
+# No references to a specific host runtime or its scheduler/loader syntax.
+for rel, text in texts.items():
+    for line_no, line in enumerate(text.splitlines(), 1):
+        if re.search(r"(?i)hermes", line):
+            failures.append(f"runtime-specific reference in {rel} at line {line_no}: {line.strip()}")
+
+description_match = re.search(r"^description:\s*(.+)$", skill, re.MULTILINE)
+if not description_match:
+    failures.append("missing description in SKILL.md frontmatter")
+else:
+    description = description_match.group(1)
+    if len(description) > 1024:
+        failures.append(f"description exceeds 1024 chars: {len(description)}")
+    if not description.startswith("Use when"):
+        failures.append("description must start with 'Use when' (triggers only)")
+    if re.search(r"(?i)\bruns a\b|one-question-at-a-time interview with", description):
+        failures.append("description summarizes the workflow; keep it to triggering conditions only")
 
 version_match = re.search(r"^version:\s*(\S+)", skill, re.MULTILINE)
 version = version_match.group(1) if version_match else None
@@ -78,7 +101,7 @@ required_skill_markers = (
     "### Multi-session continuity",
     "conditional safety override only",
     "one atomic question at a time",
-    "attach_to_session=true",
+    "### Required follow-up mechanism",
     "A final output without a review date is incomplete.",
 )
 for marker in required_skill_markers:

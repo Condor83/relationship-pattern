@@ -1,13 +1,8 @@
 ---
 name: relationship-pattern-interview
-description: Use when a single adult wants a structured review of dating or relationship history to clarify desired partnership, map recurring patterns, test explanations, and convert insight into safer, reality-based behavior. Runs a finite one-question-at-a-time interview with chronology, evidence labels, counterexamples, checkpoints, stopping rules, and action experiments; avoids diagnosis, forced childhood causation, attachment-style identity labels, and endless excavation.
-version: 0.2.1
-author: Hermes Agent
+description: Use when a single adult wants to review their dating or relationship history — asking why the same relationship patterns keep repeating, what to change about how they date, what kind of partnership they actually want, or whether a specific concern about their own romantic behavior holds up. Also use for a friend who knowingly opts into the same structured review. Not for couples mediation, diagnosing anyone, or crisis support.
+version: 0.3.0
 license: MIT
-metadata:
-  hermes:
-    tags: [relationships, dating, self-reflection, interview, decision-support]
-    related_skills: [health-and-wellbeing-support]
 ---
 
 # Relationship Pattern Interview
@@ -193,7 +188,7 @@ Adaptiveness should create useful depth without making the participant wonder wh
 
 After Q1 and Q2, give a brief working route in participant-facing language:
 
-> Your primary goal is [goal]. We’ll first define the relationship you want, then map the most informative relationship chapters and compare them. If an adult pattern raises a meaningful developmental question, I may propose a short adolescence or childhood branch and explain exactly what it would test. We will then challenge the strongest explanation and finish with concrete changes or experiments. I’ll show you our progress every six core questions, and you can redirect or stop at any checkpoint.
+> Your primary goal is [goal]. We’ll define the relationship you want, map your most informative relationship chapters and compare them, then challenge the strongest explanation and finish with concrete changes to test — and if an adult pattern raises a meaningful developmental question, I may propose a short optional branch and say exactly what it would test. I’ll check progress with you every six questions, and you can redirect or stop at any point.
 
 Before any adaptive branch—especially adolescence, childhood, trauma, sexuality, or family-of-origin—cover this **branch contract internally**, then present it naturally in two or three sentences rather than as a six-item form:
 
@@ -355,11 +350,11 @@ Review date:
 
 After every six core questions:
 
-1. If the skill loader is available, reload this `relationship-pattern-interview` skill and `templates/core-question-bank.md` before continuing. Load `references/safety-guardrails.md` only when its trigger conditions apply.
+1. Re-ground: if the environment lets you re-read files, re-read this `SKILL.md` and `templates/core-question-bank.md`; otherwise restate the internal contract and budget to yourself before continuing. Load `references/safety-guardrails.md` only when its trigger conditions apply.
 2. Reconcile the internal ledger: strongest facts, hypotheses, counterevidence, unknowns, safety, and primary-outcome fit.
-3. Show the compact four-part checkpoint defined above, normally under 120 words.
+3. Show the compact four-part checkpoint defined above.
 4. Invite correction and the choice to continue, redirect, pause, or synthesize.
-5. Generate or update the Resume Capsule internally; show it inline only when pausing, changing sessions, or the participant asks.
+5. Generate or update the Resume Capsule per Multi-session continuity.
 
 If the participant pauses, produce a proportionate synthesis and Resume Capsule from current evidence. Do not pressure completion.
 
@@ -389,7 +384,7 @@ The final output contains:
 
 1. **Relationship direction card** — desired ordinary life, values, standards, and accepted tradeoffs.
 2. **Relationship history matrix** — concise chronological evidence.
-3. **Pattern cards** — maximum five, each with evidence, counterevidence, alternatives, risk if wrong, and confidence.
+3. **Pattern cards** — each complete per the card fields in `templates/final-synthesis.md`.
 4. **Signal-weighting profile** — signals historically overweighted or underweighted, stated as hypotheses rather than verdicts.
 5. **Strengths and protective capacities** — avoid deficit-only analysis.
 6. **External constraints** — dating pool, faith/culture, timing, health, geography, workload, and other people's choices.
@@ -407,7 +402,7 @@ Pause the normal interview if the participant reports:
 - severe destabilization, dissociation, panic, or inability to function;
 - ongoing abuse where confrontation could increase danger.
 
-Respond with support, immediate safety orientation, and appropriate local or professional resources. Do not continue as though the primary issue were attachment or communication. For disclosed partner or sexual violence, use the WHO **LIVES** first-line sequence at a high level: Listen without judgment; Inquire about needs and concerns; Validate; Enhance safety; Support connection to chosen resources. Do not pressure for detail, tell the participant to confront or leave, or override their autonomy.
+Respond with support, immediate safety orientation, and appropriate local or professional resources. Do not continue as though the primary issue were attachment or communication. For disclosed partner or sexual violence, use WHO **LIVES** first-line support as specified in `references/safety-guardrails.md`. Do not pressure for detail, tell the participant to confront or leave, or override their autonomy.
 
 Safety-orientation questions during a safety pause do not count as adaptive relationship follow-ups. Preserve the paused core question and counts unchanged if the interview later resumes.
 
@@ -424,23 +419,13 @@ General safeguards:
 - include faith, culture, sexuality, disability, class, and dating-pool constraints where relevant;
 - use plain language rather than performative therapy jargon.
 
-For personal health or crisis content, load `health-and-wellbeing-support` and follow its escalation rules.
+For personal health or crisis content beyond relationship scope, follow the escalation and referral paths in `references/safety-guardrails.md`.
 
 ## Outcome Evaluation and Follow-up
 
 Same-session ratings are optional **usability signals**, not proof of effectiveness. In explicit pilot/research mode, ratings may cover clarity, agency, confidence in next action, and distress/rumination before and after. Interpret improvement cautiously because demand effects and conversational reassurance can inflate it.
 
-The primary outcome measure is behavior and hypothesis updating after real-world time has passed. At 30 days, review:
-
-- dates initiated or accepted;
-- clear bids made;
-- ambiguous situations clarified or released;
-- reciprocity-based investment decisions;
-- boundaries communicated;
-- small vulnerability/response experiments completed;
-- rumination reduced or increased;
-- hypotheses strengthened, weakened, or discarded by new evidence;
-- unintended harms or advice that felt imposed.
+The primary outcome measure is behavior and hypothesis updating after real-world time has passed. At 30 days, review the behavioral measures in `templates/final-synthesis.md` section 12 — bids, clarified or released ambiguity, reciprocity-based decisions, boundaries, completed experiments, rumination direction, hypothesis updates, and unintended harms.
 
 ### Required follow-up mechanism
 
@@ -448,7 +433,7 @@ At final synthesis:
 
 1. Set a specific review date in the operating plan.
 2. Offer—not assume—a 30-day reminder.
-3. If a scheduler such as Hermes `cronjob` is available and the participant agrees, create a one-shot job for 30 days with `attach_to_session=true`, using `templates/30-day-follow-up.md`. The prompt must be self-contained, contain the behavioral review questions, avoid unnecessary sensitive history, and invite the participant to update the provisional hypotheses.
+3. If the assistant's environment supports scheduled reminders or tasks (for example, ChatGPT scheduled tasks, Claude automations, or any calendar/cron tool) and the participant agrees, schedule a one-shot 30-day follow-up using `templates/30-day-follow-up.md`. The reminder prompt must be self-contained, contain the behavioral review questions, avoid unnecessary sensitive history, and invite the participant to update the provisional hypotheses.
 4. If no scheduler is available or the participant declines, provide a copyable calendar-reminder title and the behavioral review checklist.
 5. Record whether follow-up was scheduled, declined, or delegated to the participant in the final synthesis and Resume Capsule.
 

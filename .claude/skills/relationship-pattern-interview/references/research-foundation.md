@@ -86,7 +86,7 @@ It also examines flexibility and discrepancy between ideals and perceived partne
 
 ## Public-demand research
 
-A `/last30days` run on 2026-07-13 found weak recent evidence: Reddit was unavailable (403), YouTube returned no relevant results, and evidence was concentrated on noisy X posts. It should not guide the protocol.
+A recent-social-media scan on 2026-07-13 found weak recent evidence: Reddit was unavailable (403), YouTube returned no relevant results, and evidence was concentrated on noisy X posts. It should not guide the protocol.
 
 A supplemental authenticated X search showed demand for:
 

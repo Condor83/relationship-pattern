@@ -1,19 +1,23 @@
-# 30-Day Follow-Up Job Template
+# 30-Day Follow-Up Reminder Template
 
 Use only after the participant explicitly agrees to a reminder.
 
-## Suggested job name
+## Suggested reminder name
 
 `Relationship Pattern Interview — 30-day review`
 
 ## Schedule
 
-One-shot, 30 days from final synthesis. In Hermes: `schedule="30d"`, `repeat=1`, `attach_to_session=true`, delivery to the originating conversation unless the participant requests otherwise.
+One-shot, 30 days from final synthesis. Use whatever the environment provides, in order of preference:
 
-## Self-contained cron prompt
+1. A native scheduled task or automation (for example, ChatGPT scheduled tasks or Claude automations), delivered to the originating conversation unless the participant requests otherwise.
+2. A calendar or cron tool the participant already uses.
+3. No tooling: give the participant the reminder name above as a copyable calendar title plus the seven questions below.
+
+## Self-contained reminder prompt
 
 ```text
-Deliver a concise 30-day follow-up for a participant who completed an evidence-informed Relationship Pattern Interview. Do not diagnose, reinterpret their history, or schedule another job. Invite them to reply with answers to these behavioral review questions:
+Deliver a concise 30-day follow-up for a participant who completed an evidence-informed Relationship Pattern Interview. Do not diagnose, reinterpret their history, or schedule another reminder. Invite them to reply with answers to these behavioral review questions:
 
 1. What agreed experiment or behavior change did you actually try?
 2. What observable result occurred?
@@ -28,4 +32,4 @@ State that lack of action is useful data rather than failure. Ask the participan
 
 ## Verification
 
-After creating the job, record its job ID or delivery handle in `templates/final-synthesis.md` and the Resume Capsule. If scheduling fails, provide a copyable calendar title and the seven questions instead of claiming success.
+After scheduling, record the reminder's identifier or delivery method in `templates/final-synthesis.md` (Follow-up commitment) and the Resume Capsule. If scheduling fails, provide the copyable calendar title and the seven questions instead of claiming success.
