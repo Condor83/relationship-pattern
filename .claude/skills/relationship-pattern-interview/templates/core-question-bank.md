@@ -4,6 +4,8 @@ Before Q1, read or naturally adapt the **Default participant-facing opening** in
 
 Ask one question at a time. Adapt wording to the participant's language without changing the function of the question. Use adaptive follow-ups only when needed for accuracy.
 
+Real answers often pre-answer later questions. Before asking any core question, check whether it is already materially answered in the record; if so, confirm and extend what was given instead of re-asking it. The question still counts against the budget.
+
 ## Phase 0 — Contract and baseline
 
 ### Q1 — Desired value
@@ -118,6 +120,8 @@ If dating-pool-relevant context (age, orientation, geography, faith or cultural 
 
 Use examples already mapped before spending an adaptive follow-up. This tests—but does not presume—the claim that availability reduces attraction.
 
+Designated adaptive probe, spent only if the record leaves it unanswered: has the participant's attraction to anyone ever grown over time from a neutral start? The answer separates a growth-capable attraction system from an at-first-sight one and directly shapes selection rules.
+
 ### Q17 — Stress behavior
 
 > During relationship conflict or uncertainty, which behavior do you repeat most often?
@@ -125,6 +129,8 @@ Use examples already mapped before spending an adaptive follow-up. This tests—
 ### Q18 — Strongest counterexample
 
 > Which relationship experience is the strongest counterexample to an unhelpful pattern we might otherwise infer?
+
+If the participant answers with more pattern evidence — deficit-focused participants often cannot self-generate strengths — build the counterexample list from the existing record yourself and present it for confirmation.
 
 **Checkpoint 3:** Present no more than five candidate patterns with confidence, counterevidence, and unknowns, then give the compact checkpoint. If developmental context could distinguish an active hypothesis, propose it naturally using the branch contract. Internally update the Resume Capsule.
 
@@ -186,7 +192,7 @@ Ask for the action itself first; gather when, to whom, and observables while com
 
 > Before I synthesize, what have I misunderstood or overstated?
 
-Then record which conclusion remains uncertain and the participant's chosen action. In explicit pilot/research mode, collect the brief before/after usability ratings immediately before or after synthesis, label them as usability signals only, and place them in section 13 of the final synthesis.
+Then record the participant's chosen action from the plan; the synthesis itself carries the uncertainty ledger (sections 3 and 10), so do not ask for it separately. In explicit pilot/research mode, collect the before/after usability ratings as one compact form, labeled usability signals only, placed in section 13. At the close, make at most one ask per message — stacked closing questions get partially answered.
 
 **Final checkpoint:** Produce the final synthesis, set a specific review date, update the Resume Capsule, and offer the follow-up mechanism in `SKILL.md`.
 

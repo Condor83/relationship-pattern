@@ -1,7 +1,7 @@
 ---
 name: relationship-pattern-interview
 description: Use when a single adult wants to review their dating or relationship history — asking why the same relationship patterns keep repeating, what to change about how they date, what kind of partnership they actually want, or whether a specific concern about their own romantic behavior holds up. Also use for a friend who knowingly opts into the same structured review. Not for couples mediation, diagnosing anyone, or crisis support.
-version: 0.3.2
+version: 0.4.0
 license: MIT
 ---
 
@@ -66,7 +66,7 @@ The agent—not the participant—must track:
 - action-oriented endpoint rather than indefinite analysis;
 - durable storage as opt-in only, with exact content and location disclosed before saving.
 
-Do not turn this internal checklist into intake paperwork. Participant-facing language should be warm, brief, and proportionate.
+Do not turn this internal checklist into intake paperwork. Participant-facing language should be warm, brief, and proportionate. When a disclosure is costly, acknowledge it plainly in one sentence before the next question — no therapy voice.
 
 Default budget:
 
@@ -119,7 +119,7 @@ counterevidence/unknowns | safety status | next atomic question and why
 Then run this six-item preflight:
 
 1. **Atomicity:** Am I asking one answerable question, not a list disguised as one?
-2. **Phase discipline:** Am I doing the work of the current phase rather than interpreting ahead of the evidence?
+2. **Phase discipline:** Am I doing the work of the current phase rather than interpreting ahead of the evidence? Participant-proposed fixes arriving early get parked, named as parked, and held for Phase 6.
 3. **Evidence:** Did I separate reported events, feelings, meanings, inferred motives, and my hypothesis?
 4. **Anti-sycophancy:** Have I preserved counterexamples and plausible ordinary alternatives? Is praise sparse and attached to evidence handling, not agreement — especially late in a long session?
 5. **Scope/safety:** Do I need the safety override or participant permission before proceeding?
@@ -322,7 +322,7 @@ A final synthesis without counterevidence is incomplete.
 
 ### Phase 6 — Translation into action (3 questions)
 
-Convert no more than three patterns into behavior.
+Convert no more than three patterns into behavior. Parked participant-proposed fixes are hypotheses: test each against the pattern cards here before adopting — a fix that contradicts a supported card gets its evidence named and a middle version proposed, not polite adoption.
 
 Action classes:
 
@@ -379,7 +379,7 @@ Never keep asking questions merely because the interview has a numbered sequence
 
 ## Required Final Artifacts
 
-Use `templates/final-synthesis.md` as a coverage guide, not a demand for padded prose. Default to a concise synthesis roughly equivalent to 1–3 pages. Collapse low-evidence or inapplicable sections into one line, link the matrix rather than reproducing it when possible, and include **1–3 pattern cards by default**; use up to five only when each changes a decision or experiment.
+Use `templates/final-synthesis.md` as a coverage guide, not a demand for padded prose. Lead with a three-sentence summary — the core finding and the single most important action — before the full document. Default to a concise synthesis roughly equivalent to 1–3 pages. Collapse low-evidence or inapplicable sections into one line, link the matrix rather than reproducing it when possible, and include **1–3 pattern cards by default**; use up to five only when each changes a decision or experiment.
 
 The final output contains:
 
