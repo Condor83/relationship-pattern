@@ -2,6 +2,8 @@
 
 Keep this concise, factual, and safe to paste into a new conversation. Omit identifying details, operational safety details, exact threats, locations, account/device information, and anything the participant marked “do not include,” especially when monitoring or coercive control is possible.
 
+Sections may be reshaped or folded together when the interview state warrants it, except these, which must survive in every capsule, including prose-style ones: the YAML state block, **Risk if wrong** for every listed hypothesis, and the **Resume verification** instruction. Before showing a capsule, self-check: counts verified, risk-if-wrong present per hypothesis, resume-verification instruction included.
+
 ```yaml
 protocol: relationship-pattern-interview
 version:

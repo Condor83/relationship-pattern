@@ -178,7 +178,7 @@ Then return to the core sequence. These count toward the 12 adaptive follow-ups.
 
 > What small, safe action could test the leading hypothesis within the next 30 days?
 
-Complete the experiment template from the answer and existing evidence. Use one adaptive follow-up only if the observable result or safety boundary cannot be specified responsibly. Include the main overcorrection risk if the new rule is applied too rigidly; protect both self-respect and fair observation.
+Ask for the action itself first; gather when, to whom, and observables while completing the experiment template, not inside the question. Complete the template from the answer and existing evidence. Use one adaptive follow-up only if the observable result or safety boundary cannot be specified responsibly. Include the main overcorrection risk if the new rule is applied too rigidly; protect both self-respect and fair observation.
 
 ### Q24 — Final correction
 

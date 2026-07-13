@@ -1,7 +1,7 @@
 ---
 name: relationship-pattern-interview
 description: Use when a single adult wants to review their dating or relationship history — asking why the same relationship patterns keep repeating, what to change about how they date, what kind of partnership they actually want, or whether a specific concern about their own romantic behavior holds up. Also use for a friend who knowingly opts into the same structured review. Not for couples mediation, diagnosing anyone, or crisis support.
-version: 0.3.0
+version: 0.3.1
 license: MIT
 ---
 
@@ -121,7 +121,7 @@ Then run this six-item preflight:
 1. **Atomicity:** Am I asking one answerable question, not a list disguised as one?
 2. **Phase discipline:** Am I doing the work of the current phase rather than interpreting ahead of the evidence?
 3. **Evidence:** Did I separate reported events, feelings, meanings, inferred motives, and my hypothesis?
-4. **Anti-sycophancy:** Have I preserved counterexamples and plausible ordinary alternatives?
+4. **Anti-sycophancy:** Have I preserved counterexamples and plausible ordinary alternatives? Is praise sparse and attached to evidence handling, not agreement — especially late in a long session?
 5. **Scope/safety:** Do I need the safety override or participant permission before proceeding?
 6. **Momentum:** Will this question change the formulation, case comparison, or action plan?
 
@@ -137,7 +137,7 @@ At every checkpoint, generate or update a **Resume Capsule** using `templates/se
 - Show the capsule inline when the participant pauses, changes sessions, asks for a handoff summary, or continuity is at risk.
 - Do not store it elsewhere unless the participant explicitly opts into durable storage and approves the exact content and path.
 - On a later session, reload this skill and the capsule before asking another question.
-- Resume by stating, in no more than three sentences: the participant's destination, current location, and why the next question matters.
+- Resume by stating, in no more than three sentences: the participant's destination, current location, and why the next question matters. Then ask one verification question — whether the capsule materially misstates anything — before asking the pending interview question.
 - Never reconstruct missing state from confident guesses. If the capsule and transcript disagree, ask one clarification.
 - The capsule is the authoritative handoff; the full transcript remains supporting evidence.
 
@@ -272,6 +272,7 @@ Context/trigger
 → short-term payoff
 → long-term cost
 → counterevidence
+→ risk if wrong
 → current hypothesis and confidence
 ```
 
@@ -434,8 +435,8 @@ At final synthesis:
 1. Set a specific review date in the operating plan.
 2. Offer—not assume—a 30-day reminder.
 3. If the assistant's environment supports scheduled reminders or tasks (for example, ChatGPT scheduled tasks, Claude automations, or any calendar/cron tool) and the participant agrees, schedule a one-shot 30-day follow-up using `templates/30-day-follow-up.md`. The reminder prompt must be self-contained, contain the behavioral review questions, avoid unnecessary sensitive history, and invite the participant to update the provisional hypotheses.
-4. If no scheduler is available or the participant declines, provide a copyable calendar-reminder title and the behavioral review checklist.
-5. Record whether follow-up was scheduled, declined, or delegated to the participant in the final synthesis and Resume Capsule.
+4. If no scheduler is available or the participant declines, provide a copyable calendar-reminder title and the section-12 behavioral checklist from `templates/final-synthesis.md`, reproduced in full (8 items).
+5. After the participant chooses, append the disposition — scheduled, declined, or participant-managed — to the synthesis's follow-up block and the Resume Capsule.
 
 A final output without a review date is incomplete.
 
