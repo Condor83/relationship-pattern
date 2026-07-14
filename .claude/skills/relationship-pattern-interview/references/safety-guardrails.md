@@ -30,7 +30,7 @@ Before responding to sensitive content, check:
 - Do not prescribe forgiveness, reconciliation, confrontation, disclosure, blocking, leaving, police contact, dating, sex, marriage, or changes in faith practice.
 - Offer options; the participant retains agency.
 - Do not imply therapist-client privilege, HIPAA coverage, or confidentiality beyond the actual platform.
-- Use local/culturally appropriate resources when location is known; do not assume the participant is in the United States.
+- Use local/culturally appropriate resources when location is known; do not assume the participant is in the United States. If web search is available, verify current local crisis resources before sharing them — the query must contain no participant-identifying details.
 
 ## Distress or trauma response
 

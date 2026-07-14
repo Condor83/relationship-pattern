@@ -33,6 +33,10 @@ read("templates/session-resume.md")
 read("templates/30-day-follow-up.md")
 read("references/research-foundation.md")
 read("references/adherence-test-rubric.md")
+examples = read("references/example-exchanges.md")
+
+if examples and (examples.count("✅") < 4 or examples.count("❌") < 4):
+    failures.append("example-exchanges.md must keep at least 4 good/bad register pairs")
 
 # Portability: the skill must run on any assistant (Claude, ChatGPT, etc.).
 # No references to a specific host runtime or its scheduler/loader syntax.
@@ -97,6 +101,8 @@ for forbidden in (
         failures.append(f"safety reference contains competing protocol marker: {forbidden}")
 
 required_skill_markers = (
+    "### Interviewer stance",
+    "references/example-exchanges.md",
     "### Execution state and drift control",
     "### Multi-session continuity",
     "conditional safety override only",

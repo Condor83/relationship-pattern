@@ -34,6 +34,7 @@ The minimum the assistant needs is `SKILL.md` plus `templates/core-question-bank
 | `templates/session-resume.md` | Resume Capsule for pausing and continuing in a new chat |
 | `templates/final-synthesis.md` | Format of the final relationship map and action plan |
 | `templates/30-day-follow-up.md` | Optional 30-day behavioral review reminder |
+| `references/example-exchanges.md` | How the interviewer sounds — edit this to customize the feel |
 | `references/safety-guardrails.md` | Safety override: distress, abuse/coercion, crisis routing |
 | `references/research-foundation.md` | Research sources, limits, validation roadmap |
 | `references/adherence-test-rubric.md` | Rubric for grading test transcripts (maintainers) |
